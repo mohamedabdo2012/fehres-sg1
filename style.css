@@ -1,0 +1,141 @@
+html {
+    --main-color: #3B7FFF;
+    --secondary-color: #b9d1ff;
+    --background-color: #eee;
+    --font-color: #173772;
+    --shadow-color: #16316361;
+}
+
+* {
+    box-sizing: border-box !important;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Zain';
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px var(--shadow-color);
+}
+
+.card .title {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+
+.card .contents {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+#topDiv .container {
+    background-color: var(--main-color);
+    height: 30vh;
+    max-height: 230px;
+    color: white;
+    position: relative;
+}
+
+#topDiv .container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#topDiv .container p {
+    font-size: 20px;
+    width: 50%;
+}
+
+#topDiv .container p i {
+    margin-left: 10px;
+}
+
+#topDiv .container img {
+    width: 50%;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+#infoDiv {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#infoDiv .container {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+#infoDiv .container p {
+    font-size: 18px;
+}
+
+#infoDiv .container p i {
+    margin-left: 10px;
+}
+
+#searchDiv #searchView {
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0px 2px 5px var(--shadow-color);
+    border-radius: 10px;
+}
+
+#searchDiv #searchView i {
+    width: 10%;
+    font-size: 20px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#searchDiv #searchView input {
+    width: 70%;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+#searchDiv #searchView button {
+    width: 20%;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-size: 20px;
+}
